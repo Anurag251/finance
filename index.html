@@ -36,82 +36,55 @@
   <body>
     <!-- header-start -->
     <div class="header">
-      <nav id="nav">
-        <div class="logo-name">
-          <h1>LOGO</h1>
-        </div>
-        <ul class="desktop">
+      <nav class="navbars">
+        <div class="logo">LOGO</div>
+        <label for="btn" class="icon">
+          <i class="fa fa-bars"></i>
+        </label>
+        <input type="checkbox" id="btn" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
           <li>
-            <a href="index.html">Home</a>
+            <label for="btn-1" class="show">About Us +</label>
+            <a href="#">About Us</a>
+            <input type="checkbox" id="btn-1" />
+            <ul>
+              <li><a href="#">Our Service Center</a></li>
+              <li><a href="consultant.html">Consultant</a></li>
+              <li><a href="board-of-direstiors.html">Board Of Directory</a></li>
+              <li><a href="accounts-committee.html">Accounts Committee</a></li>
+              <li>
+                <a href="management-committee.html">Management Committee</a>
+              </li>
+              <li><a href="central-office.html">Central Office</a></li>
+              <li>
+                <a href="service-center-head.html">Service Center Heads</a>
+              </li>
+              <li><a href="#">Organization Structure</a></li>
+            </ul>
           </li>
           <li>
-            <a href="rent.html">About Us</a>
+            <label for="btn-2" class="show">Services +</label>
+            <a href="#">Services</a>
+            <input type="checkbox" id="btn-2" />
+            <ul>
+              <li><a href="#">Savings</a></li>
+              <li><a href="#">Loan</a></li>
+              <li><a href="#">Recharge Service</a></li>
+              <li><a href="#">Remittance</a></li>
+              <li><a href="#">Microfinance</a></li>
+            </ul>
           </li>
-          <li>
-            <a href="sales.html">Services</a>
-          </li>
-          <li>
-            <a href="area-guide.html">Activities</a>
-          </li>
-          <li>
-            <a href="about-us.html">Contact</a>
-          </li>
-          <li>
-            <a href="contact.html">Download</a>
-          </li>
+          <li><a href="#">Activities</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Downloads</a></li>
           <li>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
             <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
             <a href="#"><i class="fab fa-google"></i></a>
-          </li>
-          <li>
             <a href="#"><i class="fas fa-search"></i></a>
           </li>
         </ul>
-        <div class="menu-btn">
-          <div class="menu-btn_burger"></div>
-        </div>
-        <div class="phone">
-          <div class="close-btn">&times;</div>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="rent.html">About Us</a>
-            </li>
-            <li>
-              <a href="sales.html">Services</a>
-            </li>
-            <li>
-              <a href="area-guide.html">Activities</a>
-            </li>
-            <li>
-              <a href="about-us.html">Contact</a>
-            </li>
-            <li>
-              <a href="contact.html">Download</a>
-            </li>
-            <li
-              style="
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                margin: 0;
-                padding: 0;
-              "
-            >
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-google"></i></a>
-              <a href="#"><i class="fas fa-search"></i></a>
-            </li>
-          </ul>
-        </div>
       </nav>
     </div>
     <!-- header-end -->
@@ -374,7 +347,7 @@
     <!-- services-end -->
 
     <!-- about-us-start -->
-    <div class="about-us margin">
+    <div class="about margin">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -590,7 +563,7 @@
           <div class="col-lg-12">
             <div class="row">
               <div class="col-lg-3">
-                <div class="about">
+                <div class="aboutUs">
                   <div class="logo">LOGO</div>
                   <p>
                     Due to such unhealthy competition, which was unnecessarily
@@ -651,7 +624,23 @@
     <script src="./js/scripts.js"></script>
     <!-- swiper-js -->
     <script src="./js/swiper.min.js"></script>
+    <!-- google-translate -->
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
 
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          'google_translate_element'
+        );
+      }
+    </script>
     <script>
       var swiper = new Swiper('.slider .swiper-container', {
         spaceBetween: 30,
