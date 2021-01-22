@@ -141,7 +141,7 @@ button {
           line-height: 70px;
           text-decoration: none;
           font-size: 18px;
-          padding: 8px 15px;
+          padding: 8px 12px;
 
           &:hover {
             color: var(--main);
@@ -483,20 +483,20 @@ button {
 
 /***** footer-end *****/
 
-/***** consultant-page-start *****/
+/***** about-us-page-start *****/
+
+.page-name {
+  background-image: url(../images/hero_inner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .about-us-page {
-  .page-name {
-    background-image: url(../images/hero_inner.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .about-us {
     background-image: url(../images/background_4.jpg);
     background-position: center;
@@ -547,8 +547,196 @@ button {
       }
     }
   }
+
+  .our-service-center {
+    .service-center-list {
+      margin: 4rem 0;
+      .item {
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        height: 25vh;
+        width: 100%;
+        padding: 0 1rem;
+        align-items: center;
+        h4 {
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 1rem;
+          color: var(--primary);
+          transition: 0.4s;
+        }
+
+        h6 {
+          font-size: 13px;
+          font-weight: 400;
+
+          i {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
 }
 
-/***** consultant-page-end *****/
+/***** about-us-page-end *****/
 
-/***** -start *****/
+/***** contact-page-start *****/
+
+.contact-page {
+  .contact {
+    margin: 4rem 0;
+    .title {
+      text-align: left;
+    }
+
+    iframe {
+      height: 60vh;
+      width: 100%;
+    }
+
+    .info {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 2rem 0;
+      float: left;
+
+      .icon {
+        i {
+          font-size: 30px;
+          margin-right: 10px;
+        }
+      }
+
+      .icon-details {
+        h5 {
+          font-size: 17px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+
+        h6 {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    form {
+      padding: 2rem;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+
+      .title {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 24px;
+      }
+      input {
+        width: 100%;
+        border: 1px solid rgb(223, 223, 223);
+        outline: none;
+        margin-bottom: 1rem;
+        padding: 0.7rem;
+        border-radius: 20px;
+        transition: 0.4s;
+
+        &:focus {
+          border: 1px solid var(--main);
+          box-shadow: 0 0 10px rgba(#ee2e1e, 0.5);
+        }
+      }
+
+      label {
+        margin-bottom: 0.5rem;
+      }
+
+      textarea {
+        width: 100%;
+        border: 1px solid rgb(223, 223, 223);
+        outline: none;
+        margin-bottom: 1rem;
+        padding: 0.7rem;
+        border-radius: 20px;
+        transition: 0.4s;
+
+        &:focus {
+          border: 1px solid var(--main);
+          box-shadow: 0 0 10px rgba(#ee2e1e, 0.5);
+        }
+      }
+    }
+  }
+}
+
+/***** contact-page-us-end *****/
+
+/***** gallery-page-start *****/
+
+.gallery-page {
+  .gallery {
+    margin: 4rem 0;
+    text-align: center;
+
+    ul {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        text-align: center;
+        padding: 0.4rem 1.5rem;
+        font-size: 14px;
+        margin: 0 0.4rem;
+        background: #eee;
+        color: #000;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .on {
+        background: var(--main);
+        color: #fff;
+      }
+    }
+    img {
+      width: 100%;
+      margin: 0.8rem 0;
+    }
+  }
+}
+
+/***** gallery-page-us-end *****/
+
+/***** activities-page-start *****/
+
+.activities-page {
+  .activities {
+    margin: 4rem 0;
+  }
+  .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+
+    img {
+      width: 100%;
+    }
+
+    h4 {
+      color: var(--main);
+    }
+
+    h6 {
+      color: var(--primary);
+      margin: 1rem 0;
+    }
+
+    button {
+      margin-bottom: 1rem;
+    }
+  }
+}

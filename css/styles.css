@@ -158,7 +158,7 @@ button:hover {
   line-height: 70px;
   text-decoration: none;
   font-size: 18px;
-  padding: 8px 15px;
+  padding: 8px 12px;
 }
 
 .header nav ul li a:hover {
@@ -514,8 +514,8 @@ button:hover {
 }
 
 /***** footer-end *****/
-/***** consultant-page-start *****/
-.about-us-page .page-name {
+/***** about-us-page-start *****/
+.page-name {
   background-image: url(../images/hero_inner.jpg);
   background-position: center;
   background-size: cover;
@@ -591,6 +591,214 @@ button:hover {
   border-radius: 50%;
 }
 
-/***** consultant-page-end *****/
-/***** -start *****/
+.about-us-page .our-service-center .service-center-list {
+  margin: 4rem 0;
+}
+
+.about-us-page .our-service-center .service-center-list .item {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 25vh;
+  width: 100%;
+  padding: 0 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us-page .our-service-center .service-center-list .item h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.about-us-page .our-service-center .service-center-list .item h6 {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.about-us-page .our-service-center .service-center-list .item h6 i {
+  font-size: 13px;
+}
+
+/***** about-us-page-end *****/
+/***** contact-page-start *****/
+.contact-page .contact {
+  margin: 4rem 0;
+}
+
+.contact-page .contact .title {
+  text-align: left;
+}
+
+.contact-page .contact iframe {
+  height: 60vh;
+  width: 100%;
+}
+
+.contact-page .contact .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 2rem 0;
+  float: left;
+}
+
+.contact-page .contact .info .icon i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.contact-page .contact .info .icon-details h5 {
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contact-page .contact .info .icon-details h6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contact-page .contact form {
+  padding: 2rem;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.contact-page .contact form .title {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+
+.contact-page .contact form input {
+  width: 100%;
+  border: 1px solid #dfdfdf;
+  outline: none;
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  border-radius: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contact-page .contact form input:focus {
+  border: 1px solid var(--main);
+  -webkit-box-shadow: 0 0 10px rgba(238, 46, 30, 0.5);
+          box-shadow: 0 0 10px rgba(238, 46, 30, 0.5);
+}
+
+.contact-page .contact form label {
+  margin-bottom: 0.5rem;
+}
+
+.contact-page .contact form textarea {
+  width: 100%;
+  border: 1px solid #dfdfdf;
+  outline: none;
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  border-radius: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contact-page .contact form textarea:focus {
+  border: 1px solid var(--main);
+  -webkit-box-shadow: 0 0 10px rgba(238, 46, 30, 0.5);
+          box-shadow: 0 0 10px rgba(238, 46, 30, 0.5);
+}
+
+/***** contact-page-us-end *****/
+/***** gallery-page-start *****/
+.gallery-page .gallery {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.gallery-page .gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery-page .gallery ul li {
+  text-align: center;
+  padding: 0.4rem 1.5rem;
+  font-size: 14px;
+  margin: 0 0.4rem;
+  background: #eee;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.gallery-page .gallery ul .on {
+  background: var(--main);
+  color: #fff;
+}
+
+.gallery-page .gallery img {
+  width: 100%;
+  margin: 0.8rem 0;
+}
+
+/***** gallery-page-us-end *****/
+/***** activities-page-start *****/
+.activities-page .activities {
+  margin: 4rem 0;
+}
+
+.activities-page .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem 0;
+}
+
+.activities-page .items img {
+  width: 100%;
+}
+
+.activities-page .items h4 {
+  color: var(--main);
+}
+
+.activities-page .items h6 {
+  color: var(--primary);
+  margin: 1rem 0;
+}
+
+.activities-page .items button {
+  margin-bottom: 1rem;
+}
 /*# sourceMappingURL=styles.css.map */
