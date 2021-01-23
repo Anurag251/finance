@@ -28,6 +28,16 @@
     <link rel="stylesheet" href="./css/responsive.css" />
     <!-- light-house-css -->
     <link rel="stylesheet" href="./css/lightbox.min.css" />
+    <!-- swiper-css -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <!-- wow-animation-css -->
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <title>Document</title>
   </head>
@@ -66,11 +76,11 @@
             <a href="#">Services</a>
             <input type="checkbox" id="btn-2" />
             <ul>
-              <li><a href="#">Savings</a></li>
-              <li><a href="#">Loan</a></li>
-              <li><a href="#">Recharge Service</a></li>
-              <li><a href="#">Remittance</a></li>
-              <li><a href="#">Microfinance</a></li>
+              <li><a href="saving.html">Savings</a></li>
+              <li><a href="loan.html">Loan</a></li>
+              <li><a href="recharge-service.html">Recharge Service</a></li>
+              <li><a href="remittance.html">Remittance</a></li>
+              <li><a href="micrpfinance.html">Microfinance</a></li>
             </ul>
           </li>
           <li><a href="activities.html">Activities</a></li>
@@ -96,10 +106,12 @@
           <div class="row">
             <div class="col-md-12">
               <div class="about-us-list">
-                <div class="title">Board of Directors</div>
+                <div class="title wow animate__animated animate__zoomInDown">
+                  Board of Directors
+                </div>
                 <div class="row">
                   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="item">
+                    <div class="item wow animate__animated animate__fadeInUp">
                       <div class="inner-item">
                         <div class="flex-center">
                           <div
@@ -117,7 +129,7 @@
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="item">
+                    <div class="item wow animate__animated animate__fadeInUp">
                       <div class="inner-item">
                         <div class="flex-center">
                           <div
@@ -136,7 +148,7 @@
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="item">
+                    <div class="item wow animate__animated animate__fadeInUp">
                       <div class="inner-item">
                         <div class="flex-center">
                           <div
@@ -155,7 +167,7 @@
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="item">
+                    <div class="item wow animate__animated animate__fadeInUp">
                       <div class="inner-item">
                         <div class="flex-center">
                           <div
@@ -174,7 +186,7 @@
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="item">
+                    <div class="item wow animate__animated animate__fadeInUp">
                       <div class="inner-item">
                         <div class="flex-center">
                           <div
@@ -193,7 +205,7 @@
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="item">
+                    <div class="item wow animate__animated animate__fadeInUp">
                       <div class="inner-item">
                         <div class="flex-center">
                           <div
@@ -225,7 +237,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="row">
-              <div class="col-lg-3">
+              <div class="col-lg-3 wow animate__animated animate__fadeInUp">
                 <div class="aboutUs">
                   <div class="logo">LOGO</div>
                   <p>
@@ -236,7 +248,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 wow animate__animated animate__fadeInUp">
                 <h4>Gallery</h4>
                 <div class="gallery">
                   <img src="./images/inner_1-640x480.jpg" alt="" />
@@ -247,7 +259,7 @@
                   <img src="./images/hero_2-half.jpg" alt="" />
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 wow animate__animated animate__fadeInUp">
                 <h4>Usefull Links</h4>
                 <div class="usefull-links">
                   <ul>
@@ -260,7 +272,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 wow animate__animated animate__fadeInUp">
                 <h4>Social Links</h4>
                 <div class="social-icon">
                   <div class="icon">
@@ -285,6 +297,11 @@
 
     <!-- js -->
     <script src="./js/scripts.js"></script>
+    <!-- wow-animation-js -->
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <!-- google-translate -->
     <script
       type="text/javascript"

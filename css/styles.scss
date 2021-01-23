@@ -740,3 +740,66 @@ button {
     }
   }
 }
+
+.services-page {
+  .services {
+    .items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 100%;
+    }
+
+    .others {
+      margin: 2rem 0 0 0;
+      text-align: center;
+      i {
+        font-size: 48px;
+      }
+      h5 {
+        color: var(--main);
+        font-size: 18px;
+        font-weight: 500;
+        margin: 1rem 0;
+      }
+      p {
+        color: #999;
+      }
+    }
+
+    .saving {
+      margin: 4rem 0;
+
+      .contents {
+        h4 {
+          font-size: 24px;
+          color: var(--primary);
+        }
+        ul {
+          list-style: disc;
+          margin-left: 1rem;
+          li {
+            line-height: 1.7rem;
+          }
+        }
+      }
+    }
+
+    .loan {
+      margin: 4rem 0;
+      ul {
+        list-style: disc;
+        margin-left: 1rem;
+        li {
+          line-height: 1.7rem;
+          font-weight: 500;
+        }
+        p {
+          color: #999;
+        }
+      }
+    }
+  }
+}
