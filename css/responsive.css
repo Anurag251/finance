@@ -1,7 +1,6 @@
 @media only screen and (max-width: 1100px) {
-  #pop-ads #close-ads {
-    top: 4%;
-    left: 98%;
+  #pop-ads .inner-ads ::-webkit-scrollbar {
+    width: 0px;
   }
   .about-us-page .about-us .about-us-list .item .image {
     height: 7rem;
@@ -14,10 +13,6 @@
 }
 
 @media only screen and (max-width: 800px) {
-  #pop-ads #close-ads {
-    top: 4%;
-    left: 97%;
-  }
   .about-us-page .about-us .about-us-list .item .image {
     height: 8rem;
     width: 8rem;
@@ -25,10 +20,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  #pop-ads #close-ads {
-    top: 4%;
-    left: 94%;
-  }
   .about-us-page .about-us .about-us-list .item .image {
     height: 10rem;
     width: 10rem;
