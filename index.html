@@ -97,6 +97,75 @@
     </div>
     <!-- header-end -->
 
+    <div id="pop-ads">
+      <div class="inner-ads">
+        <div id="close-ads"><div>&times;</div></div>
+        <div class="ads-info">
+          <h1>Hello World</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+            laboriosam laborum alias, similique magni amet nesciunt unde soluta
+            delectus ullam quasi magnam quo exercitationem reiciendis! Labore
+            mollitia et consequatur unde?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+            laboriosam laborum alias, similique magni amet nesciunt unde soluta
+            delectus ullam quasi magnam quo exercitationem reiciendis! Labore
+            mollitia et consequatur unde?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+            laboriosam laborum alias, similique magni amet nesciunt unde soluta
+            delectus ullam quasi magnam quo exercitationem reiciendis! Labore
+            mollitia et consequatur unde?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+            laboriosam laborum alias, similique magni amet nesciunt unde soluta
+            delectus ullam quasi magnam quo exercitationem reiciendis! Labore
+            mollitia et consequatur unde?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+            laboriosam laborum alias, similique magni amet nesciunt unde soluta
+            delectus ullam quasi magnam quo exercitationem reiciendis! Labore
+            mollitia et consequatur unde?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+            laboriosam laborum alias, similique magni amet nesciunt unde soluta
+            delectus ullam quasi magnam quo exercitationem reiciendis! Labore
+            mollitia et consequatur unde?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+            laboriosam laborum alias, similique magni amet nesciunt unde soluta
+            delectus ullam quasi magnam quo exercitationem reiciendis! Labore
+            mollitia et consequatur unde?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+            laboriosam laborum alias, similique magni amet nesciunt unde soluta
+            delectus ullam quasi magnam quo exercitationem reiciendis! Labore
+            mollitia et consequatur unde?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+            laboriosam laborum alias, similique magni amet nesciunt unde soluta
+            delectus ullam quasi magnam quo exercitationem reiciendis! Labore
+            mollitia et consequatur unde?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+            laboriosam laborum alias, similique magni amet nesciunt unde soluta
+            delectus ullam quasi magnam quo exercitationem reiciendis! Labore
+            mollitia et consequatur unde?
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- slider-start -->
     <div class="slider">
       <div class="swiper-container">
@@ -304,7 +373,7 @@
                 </div>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-sx-12">
-                <div class="item">
+                <div class="item wow">
                   <div class="box">
                     <div
                       class="image wow animate__animated animate__bounceInUp"
@@ -333,7 +402,7 @@
                 </div>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-sx-12">
-                <div class="item">
+                <div class="item wow">
                   <div class="box">
                     <div
                       class="image wow animate__animated animate__bounceInUp"
@@ -364,7 +433,7 @@
                 </div>
               </div>
               <div class="col-lg-3 col-md-12 col-sm-6 col-sx-12">
-                <div class="item">
+                <div class="item wow">
                   <div class="box">
                     <div
                       class="image wow animate__animated animate__bounceInUp"
@@ -404,7 +473,7 @@
     <div class="about margin">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 wow">
             <div class="box">
               <div
                 class="image wow animate__animated animate__fadeInLeft"
@@ -739,9 +808,6 @@
     <script src="./js/swiper.min.js"></script>
     <!-- wow-animation-js -->
     <script src="./js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
     <!-- google-translate -->
     <script
       type="text/javascript"
@@ -749,6 +815,10 @@
     ></script>
 
     <script type="text/javascript">
+      /**** wow-animation-js ****/
+      new WOW().init();
+
+      /**** google-translate ****/
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
           {
@@ -758,15 +828,27 @@
           'google_translate_element'
         );
       }
-    </script>
-    <script>
+
+      /**** popup-ads ****/
+      let closeAds = document.querySelector('#close-ads');
+      let popAds = document.querySelector('#pop-ads');
+
+      setTimeout(() => {
+        popAds.style.display = 'block';
+      }, 2000);
+
+      closeAds.addEventListener('click', () => {
+        popAds.style.display = 'none';
+      });
+
+      /**** slider ****/
       var swiper = new Swiper('.slider .swiper-container', {
         spaceBetween: 30,
         loop: true,
-        // autoplay: {
-        //   delay: 4000,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
+        },
         effect: 'fade',
         pagination: {
           el: '.swiper-pagination',
@@ -778,10 +860,15 @@
         },
       });
 
+      /**** remittance ****/
       var swiper = new Swiper('.remittance .swiper-container', {
         slidesPerView: 1,
         spaceBetween: 10,
         loop: true,
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false,
+        },
 
         navigation: {
           nextEl: '.swiper-button-next',
